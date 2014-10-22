@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       return array
     rescue Exception
       puts "Something bad happened."
-    end 
+    end
   end
 
   def self.ray_charles n
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
       return array
     rescue Exception
       puts "Something bad happened."
-    end 
+    end
   end
 
   def self.fib_array n
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
       return array
     rescue Exception
       puts "Something bad happened."
-    end 
+    end
   end
 
   # GET /users
