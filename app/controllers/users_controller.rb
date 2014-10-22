@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-  def self.nib_array n
+  def self.nib_array(n)
     begin
       array = Array.new
       array[0] = 0
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def self.fib_nayray n
+  def self.fib_nayray(n)
     begin
       array = Array.new
       array[0] = 0

@@ -9,7 +9,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def self.fib_array n
+  def self.fib_array(n)
     begin
       array = Array.new
       array[0] = 0
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def self.nib_array n
+  def self.nib_array(n)
     begin
       array = Array.new
       array[0] = 0
@@ -37,7 +37,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def self.fib_nayray n
+  def self.fib_nayray(n)
     begin
       array = Array.new
       array[0] = 0
