@@ -6,7 +6,7 @@ class PostsController < ApplicationController
       (-1)**(-n+1)*fib_array(-n)[-n]
     else
       fib_array(n)[n]
-    end 
+    end
   end
 
   def self.fib_array n
@@ -26,29 +26,29 @@ class PostsController < ApplicationController
   def self.nib_array n
     begin
       array = Array.new
-      array[0] = 0 
-      array[1] = 1 
-      (n-1).times { |x| 
+      array[0] = 0
+      array[1] = 1
+      (n-1).times { |x|
         array[x+2] = array[x+1] + array[x]
-      }   
+      }
       return array
     rescue Exception
       puts "Something bad happened."
-    end 
-  end 
+    end
+  end
 
   def self.fib_nayray n
     begin
       array = Array.new
-      array[0] = 0 
-      array[1] = 1 
-      (n-1).times { |x| 
+      array[0] = 0
+      array[1] = 1
+      (n-1).times { |x|
         array[x+2] = array[x+1] + array[x]
-      }   
+      }
       return array
     rescue Exception
       puts "Something bad happened."
-    end 
+    end
   end
 
   # GET /posts
