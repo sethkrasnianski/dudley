@@ -2,25 +2,23 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   def test
     n = 0
-    if !(n >= 0) then
-      (-1)**(-n+1)*fib_array(-n)[-n]
-    else
+    if (n >= 0)
       fib_array(n)[n]
-    end 
+    else
+      (-1)**(-n+1)*fib_array(-n)[-n]
+    end
   end
 
-  def self.fib_array n
-    begin
-      array = Array.new
-      array[0] = 0
-      array[1] = 1
-      (n-1).times { |x|
-        array[x+2] = array[x+1] + array[x]
-      }
-      return array
-    rescue Exception
-      puts "Something bad happened."
+  def self.fib_array(n)
+    array = []
+    array[0] = 0
+    array[1] = 1
+    (n-1).times do |x|
+      array[x+2] = array[x+1] + array[x]
     end
+    array
+  rescue StandardError
+    puts 'Something bad happened.'
   end
 
   def self.nib_array n
