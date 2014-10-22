@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def self.fib(n)
-    if (n >= 0) then
+    if (n >= 0)
       fib_array(n)[n]
     else
       (-1)**(-n+1)*fib_array(-n)[-n]
