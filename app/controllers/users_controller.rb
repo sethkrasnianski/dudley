@@ -2,31 +2,27 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def self.nib_array(n)
-    begin
-      array = []
-      array[0] = 0
-      array[1] = 1
-      (n-1).times do |x|
-        array[x+2] = array[x+1] + array[x]
-      end
-      return array
-    rescue StandardError
-      puts 'Something bad happened.'
+    array = []
+    array[0] = 0
+    array[1] = 1
+    (n-1).times do |x|
+      array[x+2] = array[x+1] + array[x]
     end
+    return array
+  rescue StandardError
+    puts 'Something bad happened.'
   end
 
   def self.fib_nayray(n)
-    begin
-      array = []
-      array[0] = 0
-      array[1] = 1
-      (n-1).times do |x|
-        array[x+2] = array[x+1] + array[x]
-      end
-      return array
-    rescue StandardError
-      puts 'Something bad happened.'
+    array = []
+    array[0] = 0
+    array[1] = 1
+    (n-1).times do |x|
+      array[x+2] = array[x+1] + array[x]
     end
+    return array
+  rescue StandardError
+    puts 'Something bad happened.'
   end
 
   # GET /users
