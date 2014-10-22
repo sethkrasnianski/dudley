@@ -13,17 +13,7 @@ class UsersController < ApplicationController
     puts 'Something bad happened.'
   end
 
-  def self.some_method(n)
-    array = []
-    (n-1).times do |x|
-      array[x+2] = array[x+1] + array[x]
-    end
-    array
-  rescue StandardError
-    puts 'Something bad happened.'
-  end
-
-  def self.lib_array(n)
+  def self.nayray(n)
     array = []
     array[0] = 0
     array[1] = 1
