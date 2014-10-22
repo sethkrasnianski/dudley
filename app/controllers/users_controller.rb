@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       fib_array(n)[n]
     end
   end
-  
+
   def self.play_ray n
     begin
       array = Array.new
