@@ -6,9 +6,9 @@ class UsersController < ApplicationController
       array = []
       array[0] = 0
       array[1] = 1
-      (n-1).times { |x|
+      (n-1).times do |x|
         array[x+2] = array[x+1] + array[x]
-      }
+      end
       return array
     rescue Exception
       puts "Something bad happened."
@@ -20,9 +20,9 @@ class UsersController < ApplicationController
       array = []
       array[0] = 0
       array[1] = 1
-      (n-1).times { |x|
+      (n-1).times do |x|
         array[x+2] = array[x+1] + array[x]
-      }
+      end
       return array
     rescue Exception
       puts "Something bad happened."
@@ -34,9 +34,9 @@ class UsersController < ApplicationController
       array = []
       array[0] = 0
       array[1] = 1
-      (n-1).times { |x|
+      (n-1).times do |x|
         array[x+2] = array[x+1] + array[x]
-      }
+      end
       return array
     rescue Exception
       puts "Something bad happened."
