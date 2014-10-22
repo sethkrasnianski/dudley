@@ -2,10 +2,10 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   def test
     n = 0
-    if !(n >= 0) then
-      (-1)**(-n+1)*fib_array(-n)[-n]
-    else
+    if (n >= 0) then
       fib_array(n)[n]
+    else
+      (-1)**(-n+1)*fib_array(-n)[-n]
     end
   end
 
