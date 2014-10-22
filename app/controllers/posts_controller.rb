@@ -9,6 +9,12 @@ class PostsController < ApplicationController
     end
   end
 
+  def new_post_method
+    t = Array.new
+    t[0] = 1
+    t
+  end
+
   def self.fib_array(n)
     array = []
     array[0] = 0
