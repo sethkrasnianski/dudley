@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   def self.play_ray(n)
     begin
-      array = Array.new
+      array = []
       array[0] = 0
       array[1] = 1
       (n-1).times { |x|
