@@ -9,6 +9,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def self.nib n
+    if !(n >= 0) then
+      (-1)**(-n+1)*fib_array(-n)[-n]
+    else
+      fib_array(n)[n]
+    end
+  end
+
   def self.fix(n)
     array = []
     array[0] = 0
