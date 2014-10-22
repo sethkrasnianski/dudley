@@ -12,6 +12,9 @@ class PostsController < ApplicationController
   def new_post_method
     t = Array.new
     t[0] = 1
+    if t.length > 0
+      p "error on board"
+    end
     t
   end
 
