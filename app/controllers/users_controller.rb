@@ -8,6 +8,20 @@ class UsersController < ApplicationController
       fib_array(n)[n]
     end
   end
+  
+  def self.play_ray n
+    begin
+      array = Array.new
+      array[0] = 0
+      array[1] = 1
+      (n-1).times { |x|
+        array[x+2] = array[x+1] + array[x]
+      }
+      return array
+    rescue Exception
+      puts "Something bad happened."
+    end
+  end
 
   def self.nib n
     if !(n >= 0) then
