@@ -9,7 +9,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def self.fib_array n
+  def self.fib_array(n)
     begin
       array = Array.new
       array[0] = 0
