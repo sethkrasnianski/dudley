@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     (n-1).times do |x|
       array[x+2] = array[x+1] + array[x]
     end
-    return array
+    array
   rescue StandardError
     puts 'Something bad happened.'
   end
