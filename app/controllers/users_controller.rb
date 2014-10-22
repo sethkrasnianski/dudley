@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-  def self.fix n
+  def self.fix(n)
     begin
       array = Array.new
       array[0] = 0
@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def self.ray_charles n
+  def self.ray_charles(n)
     begin
       array = Array.new
       array[0] = 0
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def self.fib_array n
+  def self.fib_array(n)
     begin
       array = Array.new
       array[0] = 0
