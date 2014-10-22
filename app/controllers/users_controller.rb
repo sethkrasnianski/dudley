@@ -10,7 +10,7 @@ class UsersController < ApplicationController
         array[x+2] = array[x+1] + array[x]
       end
       return array
-    rescue Exception
+    rescue StandardError
       puts 'Something bad happened.'
     end
   end
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
         array[x+2] = array[x+1] + array[x]
       end
       return array
-    rescue Exception
+    rescue StandardError
       puts 'Something bad happened.'
     end
   end
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
         array[x+2] = array[x+1] + array[x]
       end
       return array
-    rescue Exception
+    rescue StandardError
       puts 'Something bad happened.'
     end
   end
