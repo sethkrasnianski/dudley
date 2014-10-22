@@ -6,7 +6,7 @@ class PostsController < ApplicationController
       (-1)**(-n+1)*fib_array(-n)[-n]
     else
       fib_array(n)[n]
-    end 
+    end
   end
 
   def self.fib_array n
