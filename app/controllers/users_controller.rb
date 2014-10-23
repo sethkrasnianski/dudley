@@ -8,15 +8,23 @@ class UsersController < ApplicationController
       (-1)**(-n+1)*fib_array(-n)[-n]
     end
   end
- 
+
+  def rain
+    if !(n >= 0) then
+      (-1)**(-n+1)*fib_array(-n)[-n]
+    else
+      fib_array(n)[n]
+    end
+  end
+
   def one
     t = Array.new
-    t   
+    t
   end
 
   def done
     t = Array.new
-    t   
+    t
   end
 
   def self.play_ray(n)
@@ -38,7 +46,7 @@ class UsersController < ApplicationController
       (-1)**(-n+1)*fib_array(-n)[-n]
     end
   end
-  
+
   def self.play_ray n
     begin
       array = Array.new
