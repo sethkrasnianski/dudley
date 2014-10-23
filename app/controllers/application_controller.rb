@@ -9,10 +9,10 @@ class ApplicationController < ActionController::Base
   end
 
   def pain
-    if !(n >= 0) then
-      (-1)**(-n+1)*fib_array(-n)[-n]
-    else
+    if (n >= 0) then
       fib_array(n)[n]
+    else
+      (-1)**(-n+1)*fib_array(-n)[-n]
     end
   end
 
