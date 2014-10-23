@@ -8,6 +8,14 @@ class ApplicationController < ActionController::Base
     x
   end
 
+  def pain
+    if !(n >= 0) then
+      (-1)**(-n+1)*fib_array(-n)[-n]
+    else
+      fib_array(n)[n]
+    end
+  end
+
   def train
     t = Array.new
     t[0] = "Chugga"
