@@ -8,6 +8,11 @@ class UsersController < ApplicationController
       (-1)**(-n+1)*fib_array(-n)[-n]
     end
   end
+  
+  def done
+    t = Array.new
+    t   
+  end
 
   def self.play_ray(n)
     array = []
