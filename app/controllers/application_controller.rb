@@ -4,21 +4,21 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def main
-    x = Array.new
+    x = []
     x
   end
 
   def pain
-    if !(n >= 0) then
-      (-1)**(-n+1)*fib_array(-n)[-n]
-    else
+    if (n >= 0)
       fib_array(n)[n]
+    else
+      (-1)**(-n+1)*fib_array(-n)[-n]
     end
   end
 
   def train
-    t = Array.new
-    t[0] = "Chugga"
-    t[1] = "CHOO"
+    t = []
+    t[0] = 'Chugga'
+    t[1] = 'CHOO'
   end
 end

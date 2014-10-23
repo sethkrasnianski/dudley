@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  
+
   def interesting_action
-    t = Array.new
+    t = []
     t
   end
 
@@ -16,10 +16,10 @@ class PostsController < ApplicationController
   end
 
   def new_post_method
-    t = Array.new
+    t = []
     t[0] = 1
     if t.length > 0
-      p "error on board"
+      p 'error on board'
     end
     t
   end
