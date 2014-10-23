@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     t = []
     t[0] = 1
     if t.length > 0
-      p "error on board"
+      p 'error on board'
     end
     t
   end
