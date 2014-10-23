@@ -7,4 +7,10 @@ class ApplicationController < ActionController::Base
     x = Array.new
     x
   end
+
+  def train
+    t = Array.new
+    t[0] = "Chugga"
+    t[1] = "CHOO"
+  end
 end
