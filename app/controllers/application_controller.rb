@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
 
   def train
     t = []
-    t[0] = "Chugga"
-    t[1] = "CHOO"
+    t[0] = 'Chugga'
+    t[1] = 'CHOO'
   end
 end
