@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def main
-    x = Array.new
+    x = []
     x
   end
 
@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   end
 
   def train
-    t = Array.new
+    t = []
     t[0] = "Chugga"
     t[1] = "CHOO"
   end
